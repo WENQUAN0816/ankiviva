@@ -47,3 +47,21 @@ python tools\generate_google_audio.py
 
 如果作为纯静态网页部署，例如 GitHub Pages，则上传接口不可用，此时录音只保存在浏览器本地。  
 如果通过 `server.py` 或其他后端服务器运行，则录音会上传并保存到服务器端 `uploads/` 目录。
+
+## GitHub Pages
+
+仓库已经包含 GitHub Pages 工作流：
+
+- `.github/workflows/deploy-pages.yml`
+
+部署后，预期访问地址为：
+
+```text
+https://wenquan0816.github.io/ankiviva/
+```
+
+说明：
+
+- GitHub Pages 作为纯静态托管时，录音上传接口不可用
+- 在线版录音将退回为“浏览器本地保存”
+- 如果需要真正在线保存录音，仍然需要额外后端或对象存储
