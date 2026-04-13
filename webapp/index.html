@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnkiViva Web</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="authOverlay" class="overlay">
+    <div class="auth-card">
+      <h1>AnkiViva Web</h1>
+      <p class="muted">简化版博士答辩训练网页。固定 MP3 问题、手动录音、分支追问、备答保存。</p>
+      <div class="tab-row">
+        <button id="showLoginBtn" class="tab-btn active" type="button">登录</button>
+        <button id="showRegisterBtn" class="tab-btn" type="button">注册</button>
+      </div>
+
+      <form id="loginForm" class="auth-form">
+        <label>用户名<input id="loginUsername" autocomplete="username" required></label>
+        <label>密码<input id="loginPassword" type="password" autocomplete="current-password" required></label>
+        <button type="submit" class="primary-btn">登录</button>
+      </form>
+
+      <form id="registerForm" class="auth-form hidden">
+        <label>用户名<input id="registerUsername" autocomplete="username" required></label>
+        <label>密码<input id="registerPassword" type="password" autocomplete="new-password" required></label>
+        <label>确认密码<input id="registerPassword2" type="password" autocomplete="new-password" required></label>
+        <button type="submit" class="primary-btn">本地注册</button>
+      </form>
+
+      <p id="authMessage" class="message"></p>
+    </div>
+  </div>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <section class="panel">
+        <div class="title-row">
+          <h2>账户</h2>
+          <button id="logoutBtn" class="ghost-btn" type="button">退出</button>
+        </div>
+        <p>当前用户：<strong id="currentUserLabel">-</strong></p>
+        <p id="serverModeLabel" class="muted">正在检测运行模式…</p>
+      </section>
+
+      <section class="panel">
+        <h2>训练设置</h2>
+        <label>提问顺序
+          <select id="orderMode">
+            <option value="chapter">按章节顺序</option>
+            <option value="random">按问题组乱序</option>
+          </select>
+        </label>
+        <label>分支模式
+          <select id="branchMode">
+            <option value="random">随机 A/B 分支</option>
+            <option value="manual">主问题后手动选择 A/B</option>
+            <option value="all">完整全分支模式</option>
+          </select>
+        </label>
+        <div class="button-row">
+          <button id="prepareMicBtn" class="secondary-btn" type="button">初始化麦克风</button>
+          <button id="startSessionBtn" class="primary-btn" type="button">开始新练习</button>
+        </div>
+        <button id="resumeSessionBtn" class="ghost-btn full-width" type="button">继续上次练习</button>
+        <p id="micStatus" class="muted">尚未初始化麦克风。</p>
+      </section>
+
+      <section class="panel">
+        <h2>章节选择</h2>
+        <div id="chapterFilters" class="checklist"></div>
+      </section>
+
+      <section class="panel">
+        <h2>统计</h2>
+        <ul class="stats-list">
+          <li>问题组总数：<strong id="groupCountLabel">0</strong></li>
+          <li>完整题目总数：<strong id="fullPromptCountLabel">0</strong></li>
+          <li>单分支总数：<strong id="singlePromptCountLabel">0</strong></li>
+        </ul>
+        <button id="exportSessionBtn" class="ghost-btn full-width" type="button">导出本次练习</button>
+      </section>
+    </aside>
+
+    <main class="main-panel">
+      <header class="panel header-panel">
+        <div>
+          <p class="eyebrow">Viva Practice</p>
+          <h1 id="sessionTitle">请先登录并开始练习</h1>
+        </div>
+        <div class="progress-box">
+          <div>问题组进度：<strong id="groupProgressLabel">0 / 0</strong></div>
+          <div>当前题目：<strong id="promptProgressLabel">0 / 0</strong></div>
+          <div>已用时：<strong id="timerLabel">00:00</strong></div>
+        </div>
+      </header>
+
+      <section class="panel">
+        <div class="title-row">
+          <div>
+            <p id="chapterLabel" class="eyebrow">Chapter</p>
+            <h2 id="questionMetaLabel">题目尚未开始</h2>
+          </div>
+          <span id="promptTypeBadge" class="badge">待开始</span>
+        </div>
+
+        <div class="button-row wrap">
+          <button id="playPromptBtn" class="primary-btn" type="button">播放问题 MP3</button>
+          <button id="recordToggleBtn" class="secondary-btn" type="button" disabled>开始录音</button>
+          <button id="nextPromptBtn" class="ghost-btn" type="button" disabled>下一题</button>
+        </div>
+
+        <p id="statusLine" class="message muted">等待开始。</p>
+
+        <div id="branchChooser" class="branch-chooser hidden">
+          <p>请选择下一条追问路径：</p>
+          <div class="button-row">
+            <button class="branch-btn" data-branch="A" type="button">走 A 分支</button>
+            <button class="branch-btn" data-branch="B" type="button">走 B 分支</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="title-row">
+          <h2>我的备答</h2>
+          <div class="button-row compact">
+            <button id="saveNotesBtn" class="secondary-btn" type="button">保存备答</button>
+            <button id="clearNotesBtn" class="ghost-btn" type="button">清空</button>
+          </div>
+        </div>
+        <textarea id="notesEditor" placeholder="这里保存你自己整理的备答，不显示系统参考答案。"></textarea>
+      </section>
+
+      <section class="panel">
+        <div class="title-row">
+          <h2>当前题目作答记录</h2>
+          <button id="refreshAttemptsBtn" class="ghost-btn" type="button">刷新记录</button>
+        </div>
+        <div id="attemptList" class="attempt-list">
+          <p class="muted">暂无记录。</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,1006 @@
+{
+  "engine": "gTTS",
+  "count": 125,
+  "items": [
+    {
+      "promptId": "Q01-main",
+      "text": "用一句话总结你的论文",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q01-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q01-A",
+      "text": "你的研究对象、方法和结果，能不能再压缩得更具体一点？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q01-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q01-A1",
+      "text": "那你的创新到底落在哪个环节？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q01-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q01-B",
+      "text": "你这一句话和你的研究目标是完全一致的吗？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q01-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q01-B1",
+      "text": "如果只能保留一个结果，你保留什么？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q01-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q02-main",
+      "text": "为什么选择这个题目",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q02-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q02-A",
+      "text": "现实问题很多，为什么它能上升为博士研究问题？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q02-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q02-A1",
+      "text": "那你解决的是“真空白”还是“已有研究做得不够”？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q02-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q02-B",
+      "text": "为什么不只做空间设计，或者只做健康服务？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q02-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q02-B1",
+      "text": "那你怎么防止研究范围失控？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q02-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q03-main",
+      "text": "你的题目是社区空间，为什么框架里很多不是纯空间设计内容",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q03-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q03-A",
+      "text": "你是不是把空间解释成了社区里的一切？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q03-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q03-A1",
+      "text": "那你的边界在哪里？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q03-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q03-B",
+      "text": "你这种扩展有什么理论支撑？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q03-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q03-B1",
+      "text": "那为什么不直接改成“社区环境评价”？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q03-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q04-main",
+      "text": "你的方法用一句话怎么概括？和传统 Delphi、AHP 有什么不同？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q04-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q04-A",
+      "text": "你不能只说整合，真正新在哪里？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q04-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q04-A1",
+      "text": "那是不是把主观性完全消除了？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q04-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q04-B",
+      "text": "为什么不是简单堆方法？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q04-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q04-B1",
+      "text": "如果删掉一个环节，会怎样？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q04-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q05-main",
+      "text": "你的论文理论是什么",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q05-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q05-A",
+      "text": "到底哪个是主理论？不要什么都说。",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q05-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q05-A1",
+      "text": "那 WHO 框架是理论还是工具？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q05-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q05-B",
+      "text": "你的理论不是摆在文献综述里就结束了吗？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q05-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q05-B1",
+      "text": "你的结果有没有反过来修正理论？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q05-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q06-main",
+      "text": "你的研究问题、研究目标和最终结果是怎么匹配的，是否都达成了",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q06-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q06-A",
+      "text": "能不能举一个具体例子说明这种对应关系？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q06-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q06-A1",
+      "text": "有没有哪个目标达成得比较弱？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q06-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q06-B",
+      "text": "你的问题问的是“社区空间质量”，结果却做成了综合评价系统，这层级是不是变了？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q06-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q06-B1",
+      "text": "那你更像方法研究还是应用研究？",
+      "chapter": "Chapter 1: Research Positioning",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q06-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q07-main",
+      "text": "你的 410 个文本是怎么选出来的，依据是什么",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q07-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q07-A",
+      "text": "为什么不是只用文献，为什么还要加行业报告和标准文件？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q07-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q07-A1",
+      "text": "三类来源谁更重要？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q07-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q07-B",
+      "text": "别人能不能按照你的规则复现这 410 份文本？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q07-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q07-B1",
+      "text": "那为什么不公开完整清单？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q07-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q08-main",
+      "text": "为什么选择 SciBERT 这个方法",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q08-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q08-A",
+      "text": "普通 BERT 或者人工读文献不行吗？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q08-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q08-A1",
+      "text": "那你有没有做比较验证？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q08-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q08-B",
+      "text": "你是不是为了显得高级才用 SciBERT？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q08-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q08-B1",
+      "text": "如果不用 SciBERT，你的研究还能做吗？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q08-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q09-main",
+      "text": "847 个怎么缩减为 55 个，用了什么方法",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q09-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q09-A",
+      "text": "最关键的三步其实是哪三步？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q09-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q09-A1",
+      "text": "哪一步最容易引入主观性？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q09-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q09-B",
+      "text": "你怎么证明没有把关键指标筛掉？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q09-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q09-B1",
+      "text": "有没有被删掉但后来又觉得重要的指标？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q09-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q10-main",
+      "text": "你的聚类方法为什么选择这个",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q10-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q10-A",
+      "text": "k-means 更常见，为什么不用？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q10-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q10-A1",
+      "text": "那你怎么证明层次聚类效果更好？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q10-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q10-B",
+      "text": "这些类是算法硬分出来的，还是有实际意义？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q10-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q10-B1",
+      "text": "如果专家不同意算法分组怎么办？",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q10-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q11-main",
+      "text": "你的专家调研数据是怎么得到验证的",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q11-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q11-A",
+      "text": "这些统计指标为什么足以证明专家数据可信？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q11-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q11-A1",
+      "text": "有没有哪个指标最关键？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q11-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q11-B",
+      "text": "如果专家来源相似，会不会导致偏差？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q11-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q11-B1",
+      "text": "那有没有做偏差检验？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q11-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q12-main",
+      "text": "你将评估系统应用于社区评估时，服务、满意度之类的指标是怎么测出来的",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q12-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q12-A",
+      "text": "满意度这种指标会不会太软，不适合进体系？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q12-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q12-A1",
+      "text": "那你怎么控制它的主观偏差？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q12-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q12-B",
+      "text": "满意度、覆盖率、响应时间怎么放到一个体系里？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q12-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q12-B1",
+      "text": "那标准化会不会掩盖原始差异？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q12-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q13-main",
+      "text": "你觉得每个社区是几个专家评估的，这种评估方法有依据吗",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q13-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q13-A",
+      "text": "到底是几个人，不要只说“多学科”。",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q13-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q13-A1",
+      "text": "人数这么少，你为什么认为结果可靠？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q13-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q13-B",
+      "text": "为什么这种案例评估是合理的？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q13-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q13-B1",
+      "text": "那如果换一组评估者，结果会变吗？",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q13-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q14-main",
+      "text": "你的三个社区的数据是怎么得出来的",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q14-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q14-A",
+      "text": "这些数据只是管理者给你的，还是有居民视角？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q14-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q14-A1",
+      "text": "居民数据占比高吗？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q14-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q14-B",
+      "text": "三个社区的数据来源结构一致吗？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q14-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q14-B1",
+      "text": "那资料不完整的社区会不会吃亏？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q14-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q15-main",
+      "text": "你的 3 个社区样本你觉得可以够用吗",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q15-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q15-A",
+      "text": "你凭什么说这三个有代表性？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q15-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q15-A1",
+      "text": "那是不是只代表郑州，不代表河南？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q15-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q15-B",
+      "text": "为什么不多做几个？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q15-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q15-B1",
+      "text": "那未来要不要扩样？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q15-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q16-main",
+      "text": "你这个 3 个社区评估完了，说明了什么，目的是什么，结果是什么",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q16-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q16-A",
+      "text": "你说“说明了什么”，是说明理论对，还是说明工具好用？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q16-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q16-A1",
+      "text": "那如果案例得分接近会怎样？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q16-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q16-B",
+      "text": "有没有和你预期不一样的地方？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q16-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q16-B1",
+      "text": "这个意外会不会说明你的体系偏袒社会指标？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q16-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q17-main",
+      "text": "你的论文的核心结果是什么，是哪个表格或者图表",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q17-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q17-A",
+      "text": "只能选一个，你选哪个？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q17-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q17-A1",
+      "text": "那一级权重结果就不重要了吗？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q17-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q17-B",
+      "text": "如果让你用一张图讲整篇论文，你选哪张？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q17-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q17-B1",
+      "text": "为什么不是方法流程图？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q17-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q18-main",
+      "text": "你的核心发现是什么",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q18-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q18-A",
+      "text": "健康和应急重要，大家都知道，这算什么发现？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q18-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q18-A1",
+      "text": "那这算理论发现还是经验发现？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q18-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q18-B",
+      "text": "你说有不同发展路径，这个结论可靠吗？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q18-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q18-B1",
+      "text": "会不会只是 3 个案例凑巧？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q18-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q19-main",
+      "text": "你的研究有什么异常之处或者值得关注的地方",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q19-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q19-A",
+      "text": "你说的是发现，不是异常，有没有真正异常的地方？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q19-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q19-A1",
+      "text": "如果这些口径不统一，会影响结论吗？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q19-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q19-B",
+      "text": "这些现象对你后面的讨论有什么影响？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q19-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q19-B1",
+      "text": "那政策上意味着什么？",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q19-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q20-main",
+      "text": "你的论文的缺陷是什么",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q20-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q20-A",
+      "text": "只能说一个，最核心的缺陷是什么？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q20-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q20-A1",
+      "text": "那这会不会影响论文成立？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q20-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q20-B",
+      "text": "这听起来像一般性套话，你真正困难的地方是什么？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q20-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q20-B1",
+      "text": "那你最后解决得彻底吗？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q20-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q21-main",
+      "text": "你的这个评估系统具备什么普适性吗",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q21-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q21-A",
+      "text": "如果权重都要改，那你还敢说有普适性？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q21-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q21-A1",
+      "text": "那什么东西是最稳定的？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q21-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q21-B",
+      "text": "你的体系能不能拿去国外用？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q21-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q21-B1",
+      "text": "那 WHO 框架和你的体系是什么关系？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q21-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q22-main",
+      "text": "你的整个评估系统的贡献是什么，理论和实践的贡献分别是什么",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q22-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q22-A",
+      "text": "这更像实践工具，理论贡献到底在哪？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q22-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q22-A1",
+      "text": "那这个理论贡献能被其他研究者使用吗？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q22-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q22-B",
+      "text": "谁会真正拿你的体系去用？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q22-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q22-B1",
+      "text": "它能直接拿来打分吗？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q22-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q23-main",
+      "text": "你的评估系统未来怎么发展",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q23-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q23-A",
+      "text": "只能选一个，最值得先做哪个？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q23-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q23-A1",
+      "text": "为什么不是先做数字平台？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q23-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q23-B",
+      "text": "如果继续做博士后或下一篇文章，你会先做哪一步？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q23-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q23-B1",
+      "text": "那会不会改方法？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q23-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q24-main",
+      "text": "你的论文未来的应用方向在哪里，就是有什么实际的用途，或者有没有可能扩展",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q24-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q24-A",
+      "text": "不要说很多，最现实的一个场景是什么？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q24-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q24-A1",
+      "text": "那它和普通打分表有什么区别？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q24-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q24-B",
+      "text": "你说能扩展到别的地方，会不会只是愿景？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q24-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q24-B1",
+      "text": "那扩展时最先要改什么？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q24-B1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q25-main",
+      "text": "你的这个评估系统都可以让谁使用",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "主问题",
+      "file": "./audio/prompts/Q25-main.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q25-A",
+      "text": "这么多人都能用，但他们怎么会用同一套东西？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 A",
+      "file": "./audio/prompts/Q25-A.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q25-A1",
+      "text": "那居民真的能用吗？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 A1",
+      "file": "./audio/prompts/Q25-A1.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q25-B",
+      "text": "在这些用户里，你最希望谁用？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第一层追问 B",
+      "file": "./audio/prompts/Q25-B.mp3",
+      "generated": true
+    },
+    {
+      "promptId": "Q25-B1",
+      "text": "那研究者的作用是什么？",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "typeLabel": "第二层追问 B1",
+      "file": "./audio/prompts/Q25-B1.mp3",
+      "generated": true
+    }
+  ]
+}

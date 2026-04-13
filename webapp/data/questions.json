@@ -1,0 +1,717 @@
+{
+  "meta": {
+    "title": "PhD Viva Questions with Two-Level Follow-Up Branches",
+    "groupCount": 25,
+    "fullPromptCount": 125,
+    "singleBranchPromptCount": 75,
+    "chapters": {
+      "Chapter 1: Research Positioning": 6,
+      "Chapter 2: Corpus, Indicator Generation, and Method Selection": 4,
+      "Chapter 3: Expert Validation and Weighting": 3,
+      "Chapter 4: Case Studies and Results": 6,
+      "Chapter 5: Limitations, Generalizability, Contribution, and Use": 6
+    }
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "title": "用一句话总结你的论文",
+      "chapter": "Chapter 1: Research Positioning",
+      "mainAnswerAnchor": "我的论文构建并验证了一个面向后疫情时代河南省城市老年社区的综合评估体系，该体系融合了 AI 指标提取、专家共识筛选、层次赋权和案例验证。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "你的研究对象、方法和结果，能不能再压缩得更具体一点？",
+          "answerHint": "补上研究对象是“河南城市老年社区空间”，方法是 “SciBERT + FDM + AHP + case study”，结果是“形成 48 个最终指标并在 3 个社区中完成验证”。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那你的创新到底落在哪个环节？",
+            "answerHint": "强调创新不在某一个单独指标，而在“指标生成方式、验证方式和情境适配方式”的整合。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "你这一句话和你的研究目标是完全一致的吗？",
+          "answerHint": "说明这句话对应三个目标，分别是识别因素、确定优先级、开发并验证体系。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "如果只能保留一个结果，你保留什么？",
+            "answerHint": "保留“48 指标的综合评估体系已在 3 个社区中显示出区分力”这一结果。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q02",
+      "title": "为什么选择这个题目",
+      "chapter": "Chapter 1: Research Positioning",
+      "mainAnswerAnchor": "我选择这个题目，是因为河南老龄化压力显著，而后疫情背景又强化了健康风险和社区韧性问题，但现有评价框架仍然缺少一个系统化、本土化、可操作的评估工具。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "现实问题很多，为什么它能上升为博士研究问题？",
+          "answerHint": "指出它同时具备理论空白、方法空白和实践需求，不只是政策议题。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那你解决的是“真空白”还是“已有研究做得不够”？",
+            "answerHint": "说是后者更准确，即已有研究存在，但缺乏系统整合、后疫情适配和社区尺度验证。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "为什么不只做空间设计，或者只做健康服务？",
+          "answerHint": "说明老年友好社区的问题本身是跨维度的，单一视角无法支持完整评价体系开发。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那你怎么防止研究范围失控？",
+            "answerHint": "通过河南、城市社区、成熟社区、后疫情时段和案例数量的边界来控制范围。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q03",
+      "title": "你的题目是社区空间，为什么框架里很多不是纯空间设计内容",
+      "chapter": "Chapter 1: Research Positioning",
+      "mainAnswerAnchor": "我的研究对象仍然是社区空间，但评价视角不是纯形态设计视角，而是“空间使用绩效”视角。对老年人而言，空间是否友好，不仅取决于物理设施本身，还取决于这些空间能否在健康服务、应急响应和社区支持条件配合下被安全、持续和有效地使用。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "你是不是把空间解释成了社区里的一切？",
+          "answerHint": "明确不是。医疗、应急、支持网络不是空间本体，而是影响空间使用效果的支撑条件。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那你的边界在哪里？",
+            "answerHint": "边界是“是否直接影响老年人在社区中的空间使用、停留、出行和就地养老活动”。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "你这种扩展有什么理论支撑？",
+          "answerHint": "用人—环境匹配理论，说明老年友好取决于环境要求和老年人能力需求之间是否形成匹配。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那为什么不直接改成“社区环境评价”？",
+            "answerHint": "承认这篇论文比传统形态空间研究更宽，但落点仍然是社区空间如何被支持并被有效使用。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q04",
+      "title": "你的方法用一句话怎么概括？和传统 Delphi、AHP 有什么不同？",
+      "chapter": "Chapter 1: Research Positioning",
+      "mainAnswerAnchor": "我的方法可以概括为“数据驱动的指标生成、专家校准的指标验证、层次赋权的优先级识别，以及案例导向的系统验证”。与传统 Delphi-AHP 研究不同的是，我先用 SciBERT 从大规模文本中生成候选指标，再交给专家筛选和赋权，从而降低了前端指标生成阶段的主观性。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "你不能只说整合，真正新在哪里？",
+          "answerHint": "新在起点不是“研究者先列指标”，而是“语料驱动生成指标”，然后再进入专家阶段。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那是不是把主观性完全消除了？",
+            "answerHint": "不是完全消除，而是前端降低主观性，中端通过专家校准保证理论和实践可用性。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "为什么不是简单堆方法？",
+          "answerHint": "说明四个环节有严格顺序依赖，SciBERT 负责生成，聚类负责结构化，FDM 负责验证，AHP 负责赋权，案例负责检验区分力。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "如果删掉一个环节，会怎样？",
+            "answerHint": "删掉任何一个都会破坏链条，例如没有 FDM 就缺乏专家共识，没有案例验证就无法证明实用性。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q05",
+      "title": "你的论文理论是什么",
+      "chapter": "Chapter 1: Research Positioning",
+      "mainAnswerAnchor": "我的核心理论基础是人—环境匹配理论。除此之外，我还结合了生态系统理论、活动理论、连续性理论、WHO 老年友好社区框架，以及后疫情韧性视角，共同支撑这篇论文的理论结构。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "到底哪个是主理论？不要什么都说。",
+          "answerHint": "明确主理论是人—环境匹配理论，其他理论是辅助解释不同维度的支撑框架。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那 WHO 框架是理论还是工具？",
+            "answerHint": "说它更接近概念框架和国际参照，不是我论文最核心的基础理论。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "你的理论不是摆在文献综述里就结束了吗？",
+          "answerHint": "说明理论决定了为什么指标不只包括物理环境，也包括健康、支持和应急维度，并指导了对结果的解释。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "你的结果有没有反过来修正理论？",
+            "answerHint": "有，尤其是后疫情时代健康与应急权重显著上升，推动了对老年友好理论重心的再理解。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q06",
+      "title": "你的研究问题、研究目标和最终结果是怎么匹配的，是否都达成了",
+      "chapter": "Chapter 1: Research Positioning",
+      "mainAnswerAnchor": "是匹配的，而且是一一对应的。研究目标一通过 SciBERT 和聚类识别关键因素，研究目标二通过 FDM 和 AHP 形成优先级结构，研究目标三通过 3 个社区的案例验证完成综合评估体系开发，所以最终结果直接回应了三个研究问题。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "能不能举一个具体例子说明这种对应关系？",
+          "answerHint": "例如“什么因素重要”对应 410 文本和 55 指标，“哪些因素更重要”对应权重排序，“体系是否可用”对应 3 个社区的得分差异。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "有没有哪个目标达成得比较弱？",
+            "answerHint": "承认第三目标在统计普遍性上仍有限，但在框架验证层面是达成的。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "你的问题问的是“社区空间质量”，结果却做成了综合评价系统，这层级是不是变了？",
+          "answerHint": "说明系统开发正是对“如何评价社区空间质量”这个问题的操作化回答。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那你更像方法研究还是应用研究？",
+            "answerHint": "说是“方法开发导向的应用研究”，两者结合。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q07",
+      "title": "你的 410 个文本是怎么选出来的，依据是什么",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "mainAnswerAnchor": "410 份文本来自三类来源：345 篇 Scopus 文献、31 份官方行业调研报告和 34 份官方评估标准文件。三类文本都经过系统筛选，依据包括权威性、相关性、方法质量、数据质量和近五年的时效性。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "为什么不是只用文献，为什么还要加行业报告和标准文件？",
+          "answerHint": "因为如果只用学术文献，体系会偏理论，加入行业报告和标准文件是为了提高实践性和制度相关性。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "三类来源谁更重要？",
+            "answerHint": "没有绝对主次，学术文献提供理论广度，报告提供实践经验，标准文件提供规范性。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "别人能不能按照你的规则复现这 410 份文本？",
+          "answerHint": "能，论文里已经给出数据库、关键词、PRISMA 流程、初始数量和筛选标准。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那为什么不公开完整清单？",
+            "answerHint": "如果尚未完整公开，可回答未来可以作为补充材料整理；如果已公开，则指出仓库或附录位置。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q08",
+      "title": "为什么选择 SciBERT 这个方法",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "mainAnswerAnchor": "我选择 SciBERT，是因为它是针对学术语料预训练的语言模型，更适合处理论文、报告和标准文件这类专业文本。相比通用 BERT，它对学术术语、领域上下文和多源文本关系的识别能力更强，因此更适合用来做指标提取。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "普通 BERT 或者人工读文献不行吗？",
+          "answerHint": "人工编码效率太低且一致性难保证，普通 BERT 对学术领域术语的适配不如 SciBERT。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那你有没有做比较验证？",
+            "answerHint": "说明论文里通过准确率和 F1 对模型效果进行了验证，并强调其适用于本研究语料。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "你是不是为了显得高级才用 SciBERT？",
+          "answerHint": "强调选择原则是语料匹配和任务适配，不是技术堆砌；它解决的是大规模学术语料下指标生成的效率和一致性问题。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "如果不用 SciBERT，你的研究还能做吗？",
+            "answerHint": "能做，但会更依赖人工主观筛选，且可重复性、规模和效率都会下降。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q09",
+      "title": "847 个怎么缩减为 55 个，用了什么方法",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "mainAnswerAnchor": "847 个候选指标是 SciBERT 自动提取出的初始结果，随后我通过七阶段流程逐步筛选，最终保留 55 个高质量指标。这个流程包括语义相关性、文档频率、来源多样性、概念冗余消除、人工评审、平衡覆盖和最终完善。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "最关键的三步其实是哪三步？",
+          "answerHint": "最关键的是语义相关性筛选、概念冗余消除和人工评审，因为它们共同决定质量和可用性。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "哪一步最容易引入主观性？",
+            "answerHint": "人工评审最容易引入主观性，所以用了导师协同审查和明确标准来控制。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "你怎么证明没有把关键指标筛掉？",
+          "answerHint": "说明后面还有平衡覆盖优化和专家验证，双重机制降低了关键指标遗漏风险。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "有没有被删掉但后来又觉得重要的指标？",
+            "answerHint": "可以承认部分实施难度高或测量性差的指标被删掉，这是对实际可操作性的取舍。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q10",
+      "title": "你的聚类方法为什么选择这个",
+      "chapter": "Chapter 2: Corpus, Indicator Generation, and Method Selection",
+      "mainAnswerAnchor": "我选择层次聚类，是因为我需要构建一个多层级结构，而不是做平面分类。层次聚类能够同时呈现高层主题和低层子类，适合从 55 个指标中组织出 8 个一级维度和 14 个二级维度。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "k-means 更常见，为什么不用？",
+          "answerHint": "k-means 需要预设类数，且更适合平面划分，不适合构建树状、多层级的理论框架。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那你怎么证明层次聚类效果更好？",
+            "answerHint": "指出论文用了 silhouette、Davies-Bouldin、Calinski-Harabasz 等指标验证聚类效果。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "这些类是算法硬分出来的，还是有实际意义？",
+          "answerHint": "强调算法只是给出自然分组，最终结构还经过语义验证和专家审查。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "如果专家不同意算法分组怎么办？",
+            "answerHint": "那就以解释性和理论一致性为准，在专家验证环节进行调整。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q11",
+      "title": "你的专家调研数据是怎么得到验证的",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "mainAnswerAnchor": "专家数据是通过两轮 Fuzzy Delphi Method 验证的，不是直接采信。验证指标包括 d 值、共识率、Cronbach’s alpha、ICC 和响应稳定性，以检验一致性、可靠性和专家判断质量。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "这些统计指标为什么足以证明专家数据可信？",
+          "answerHint": "因为它们分别对应不同维度的验证，例如内部一致性、评分者一致性和跨轮稳定性。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "有没有哪个指标最关键？",
+            "answerHint": "对 FDM 来说，d 值和共识率是核心，Cronbach’s alpha 和 ICC 是支撑性的可靠性证明。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "如果专家来源相似，会不会导致偏差？",
+          "answerHint": "说明专家构成覆盖学术、政策、社区管理和健康服务等多领域，尽量降低单一背景偏差。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那有没有做偏差检验？",
+            "answerHint": "如果论文没有专门做，可以说通过跨轮一致性、几何平均聚合和多领域组成来尽量控制偏差。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q12",
+      "title": "你将评估系统应用于社区评估时，服务、满意度之类的指标是怎么测出来的",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "mainAnswerAnchor": "这些指标不是靠单一主观印象得出来的，而是通过多源证据综合测量的。服务类指标结合覆盖率、响应时间、行政记录和现场核实，满意度类指标则结合居民反馈、服务记录和实地验证后转化为标准化评分。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "满意度这种指标会不会太软，不适合进体系？",
+          "answerHint": "承认它带有主观性，但对老年友好评价而言，用户感知是服务有效性的重要维度，因此不能完全剔除。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那你怎么控制它的主观偏差？",
+            "answerHint": "通过与客观服务记录、覆盖率和功能验证互相校验。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "满意度、覆盖率、响应时间怎么放到一个体系里？",
+          "answerHint": "说明不同类型数据先经标准化处理，再进入统一评分框架并按 AHP 权重聚合。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那标准化会不会掩盖原始差异？",
+            "answerHint": "会有信息压缩，但这是综合评价必须接受的代价，重点是保证可比性和结构解释性。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q13",
+      "title": "你觉得每个社区是几个专家评估的，这种评估方法有依据吗",
+      "chapter": "Chapter 3: Expert Validation and Weighting",
+      "mainAnswerAnchor": "案例评估不是依赖单个专家的印象评分，而是采用统一的多学科评估协议和标准化测量流程完成的。正式答辩前，我会用原始记录统一每个社区参与评估的人数，并确保与论文文本一致。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "到底是几个人，不要只说“多学科”。",
+          "answerHint": "必须给出原始记录中的真实数字，不能模糊。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "人数这么少，你为什么认为结果可靠？",
+            "answerHint": "强调可靠性来自标准化协议、多源数据互证和一致性控制，而不只是人数本身。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "为什么这种案例评估是合理的？",
+          "answerHint": "因为研究目标是框架验证，不是大样本普查；案例评估重在标准化、可解释和可重复。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那如果换一组评估者，结果会变吗？",
+            "answerHint": "会有轻微差异，但通过统一协议和客观数据支撑，整体排序和主要结论应保持稳定。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q14",
+      "title": "你的三个社区的数据是怎么得出来的",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "mainAnswerAnchor": "三个社区的数据来自三角互证过程，包括实地观察、客观测量、文档分析、行政数据、服务记录和社区层面的验证信息。所有数据都按照统一的 48 指标框架进入评估体系。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "这些数据只是管理者给你的，还是有居民视角？",
+          "answerHint": "说明案例协议中有居民验证或居民反馈成分，不完全依赖行政口径。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "居民数据占比高吗？",
+            "answerHint": "说明居民数据不是唯一来源，而是与客观和行政数据一起构成验证链条。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "三个社区的数据来源结构一致吗？",
+          "answerHint": "一致，核心协议一致，但具体资料丰富程度可能不同，因此采用了标准化评分规则。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那资料不完整的社区会不会吃亏？",
+            "answerHint": "承认这是案例研究风险之一，所以必须通过多源补充和质量控制来减弱偏差。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q15",
+      "title": "你的 3 个社区样本你觉得可以够用吗",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "mainAnswerAnchor": "如果目标是统计泛化到整个河南，那 3 个样本当然不够；但如果目标是验证评估体系的区分力、解释力和案例可用性，这 3 个具有差异化范式的社区是够用的。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "你凭什么说这三个有代表性？",
+          "answerHint": "说明选取依据不是随机抽样，而是范式抽样，分别代表现代高端、中产成熟和老旧传统三类社区。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那是不是只代表郑州，不代表河南？",
+            "answerHint": "承认地理覆盖有限，但对“主要发展范式”的覆盖是有意义的。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "为什么不多做几个？",
+          "answerHint": "案例研究强调深度和完整协议执行，3 个样本是在资源和完整性之间的平衡。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那未来要不要扩样？",
+            "answerHint": "要，未来研究的直接方向就是多城市、多类型和纵向扩展。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q16",
+      "title": "你这个 3 个社区评估完了，说明了什么，目的是什么，结果是什么",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "mainAnswerAnchor": "目的在于验证这套评估体系在真实社区中是否具有区分力和实用性。结果是三个社区得分分别为 85.27、71.24 和 54.50，显示体系能够有效区分不同发展类型的社区，并识别各自的优势和短板。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "你说“说明了什么”，是说明理论对，还是说明工具好用？",
+          "answerHint": "两者都有，但更直接说明的是工具在现实社区中可用，同时也支持了后疫情下健康与韧性优先的理论判断。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那如果案例得分接近会怎样？",
+            "answerHint": "如果分数接近，就说明区分力不足；正因为差异明显，才验证了工具有效。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "有没有和你预期不一样的地方？",
+          "answerHint": "有，老旧社区虽然基础设施差，但在社区支持和文化维度上表现出补偿性优势。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "这个意外会不会说明你的体系偏袒社会指标？",
+            "answerHint": "不会，因为总体加权后它仍然得分最低，说明体系并没有失去结构平衡。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q17",
+      "title": "你的论文的核心结果是什么，是哪个表格或者图表",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "mainAnswerAnchor": "如果从理论上说，核心结果是一级指标权重结构，显示健康服务、应急响应和交通出行构成核心支撑层；如果从验证上说，核心结果是 3 个社区的综合得分比较表，它直接证明了体系的区分力和实用性。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "只能选一个，你选哪个？",
+          "answerHint": "选“三个社区综合得分表”，因为它把体系是否真正成立直接展示出来。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那一级权重结果就不重要了吗？",
+            "answerHint": "很重要，但更偏理论解释；案例总表更能支撑“体系有效”这个核心论断。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "如果让你用一张图讲整篇论文，你选哪张？",
+          "answerHint": "选权重分布图或三级指标热图，因为它同时体现结构、重点和差异。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "为什么不是方法流程图？",
+            "answerHint": "流程图适合讲研究设计，不是核心结果本身。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q18",
+      "title": "你的核心发现是什么",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "mainAnswerAnchor": "我的核心发现是，后疫情时代老年友好社区的核心不再只是无障碍和物理设计，而是健康服务、应急响应和交通出行三者共同构成的基础支撑系统。同时，不同社区可以通过不同的发展路径实现老年友好，而不是只有一种单一路径。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "健康和应急重要，大家都知道，这算什么发现？",
+          "answerHint": "发现不在“它们重要”，而在“它们在权重结构中压倒传统空间指标，并被量化证明为核心层”。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那这算理论发现还是经验发现？",
+            "answerHint": "是以经验结果支撑的理论发现。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "你说有不同发展路径，这个结论可靠吗？",
+          "answerHint": "三个社区呈现出技术驱动、平衡现代化和社区韧性三种不同范式，说明老年友好不是单一路径。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "会不会只是 3 个案例凑巧？",
+            "answerHint": "承认样本有限，但这种范式差异至少说明“一刀切评价”并不充分。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q19",
+      "title": "你的研究有什么异常之处或者值得关注的地方",
+      "chapter": "Chapter 4: Case Studies and Results",
+      "mainAnswerAnchor": "最值得关注的地方有两个。第一，老旧社区并不一定在所有维度都落后，它可能在社区支持和社会文化上表现更强。第二，健康和应急在后疫情背景下被显著推到更核心的位置，这说明老年友好评价逻辑发生了结构性转变。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "你说的是发现，不是异常，有没有真正异常的地方？",
+          "answerHint": "可以补充一个方法文本层面的异常风险，例如专家人数和某些口径必须统一，这是答辩前必须处理的。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "如果这些口径不统一，会影响结论吗？",
+            "answerHint": "会影响答辩的可信度表达，但不必然推翻主要结果；不过必须统一。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "这些现象对你后面的讨论有什么影响？",
+          "answerHint": "它们支持了“社会资本可补偿基础设施不足”以及“后疫情重塑优先级结构”这两个关键讨论点。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那政策上意味着什么？",
+            "answerHint": "意味着不能只砸硬件，也要重视健康、应急和社区支持网络建设。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q20",
+      "title": "你的论文的缺陷是什么",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "mainAnswerAnchor": "本研究的主要局限在于案例数量有限、空间范围集中于河南城市社区、研究设计是横截面的而非纵向的，以及部分服务类指标仍受地方行政数据质量影响。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "只能说一个，最核心的缺陷是什么？",
+          "answerHint": "最核心的是案例数量有限，因此更适合做框架验证，而不是普遍性推断。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那这会不会影响论文成立？",
+            "answerHint": "不会影响框架验证成立，但会限制外部推广力度。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "这听起来像一般性套话，你真正困难的地方是什么？",
+          "answerHint": "真正困难的是如何把服务类、感知类和空间类指标纳入同一可比框架，同时保证测量可操作。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那你最后解决得彻底吗？",
+            "answerHint": "阶段性解决了，但仍有继续细化的空间。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q21",
+      "title": "你的这个评估系统具备什么普适性吗",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "mainAnswerAnchor": "这个体系具备普适性，但这种普适性主要体现在方法流程和结构逻辑上，而不是具体权重可以不加调整地照搬。换到别的省份、农村地区或国外情境时，框架可以迁移，但权重和个别指标需要重新校准。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "如果权重都要改，那你还敢说有普适性？",
+          "answerHint": "说这是社会科学中更现实的“结构普适、参数情境化”。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那什么东西是最稳定的？",
+            "answerHint": "三阶段方法链条和多层级评价结构最稳定。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "你的体系能不能拿去国外用？",
+          "answerHint": "可以作为原型框架使用，但要做文化和制度适配。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那 WHO 框架和你的体系是什么关系？",
+            "answerHint": "我的体系是在 WHO 逻辑基础上做本土化、后疫情化和社区尺度细化。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q22",
+      "title": "你的整个评估系统的贡献是什么，理论和实践的贡献分别是什么",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "mainAnswerAnchor": "理论上，这篇论文推动了老年友好社区评价从“无障碍和物理设计中心”向“健康安全、应急韧性与空间支持并重”的框架转变。实践上，它提供了一个可用于社区评估、更新优先级识别、政策制定和资源配置的操作化工具。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "这更像实践工具，理论贡献到底在哪？",
+          "answerHint": "理论贡献在于重构优先级逻辑，并用量化结果证明健康与应急成为后疫情时代的核心层。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那这个理论贡献能被其他研究者使用吗？",
+            "answerHint": "可以，尤其在后疫情老年友好研究和社区韧性研究中有参考价值。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "谁会真正拿你的体系去用？",
+          "answerHint": "地方政府、规划部门、社区管理者、养老和健康服务机构都可以使用。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "它能直接拿来打分吗？",
+            "answerHint": "可以作为标准化工具使用，但正式推广前仍建议做本地校准。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q23",
+      "title": "你的评估系统未来怎么发展",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "mainAnswerAnchor": "未来这个体系可以沿着四个方向发展：扩大样本和区域、向农村和不同类型社区扩展、开展纵向追踪研究，以及建设数字化和动态监测平台。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "只能选一个，最值得先做哪个？",
+          "answerHint": "最优先是扩展案例和地区验证，因为这直接关系到体系的外部效度。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "为什么不是先做数字平台？",
+            "answerHint": "平台是应用层，外部验证是方法层，方法层应优先巩固。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "如果继续做博士后或下一篇文章，你会先做哪一步？",
+          "answerHint": "优先做多城市对比或城乡比较，检验框架稳定性和权重变化。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那会不会改方法？",
+            "answerHint": "主链条不一定变，但参数、样本和数据接入方式会更丰富。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q24",
+      "title": "你的论文未来的应用方向在哪里，就是有什么实际的用途，或者有没有可能扩展",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "mainAnswerAnchor": "这个体系未来可以用于老旧社区改造评估、社区更新优先级排序、政策绩效评价、跨社区比较、资源配置决策和智慧社区建设的效果监测，也可以扩展到农村地区、其他省份和国际比较研究。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "不要说很多，最现实的一个场景是什么？",
+          "answerHint": "老旧社区更新优先级排序是最现实的，因为它最需要“有限资源下的量化依据”。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那它和普通打分表有什么区别？",
+            "answerHint": "区别在于指标来源更系统、权重更透明、结构更完整、验证更充分。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "你说能扩展到别的地方，会不会只是愿景？",
+          "answerHint": "承认目前是“方法可扩展”，不是“现成参数可移植”，但这已经具备现实基础。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那扩展时最先要改什么？",
+            "answerHint": "最先改的是权重和局部指标定义，其次才是样本和平台化接入。"
+          }
+        }
+      }
+    },
+    {
+      "id": "Q25",
+      "title": "你的这个评估系统都可以让谁使用",
+      "chapter": "Chapter 5: Limitations, Generalizability, Contribution, and Use",
+      "mainAnswerAnchor": "这个体系可以供政策制定者、城市规划师、建筑和设计人员、社区管理者、健康和养老服务机构以及研究者使用。如果做简化版本，也可以供居民组织和社区进行自评与反馈。",
+      "followups": {
+        "A": {
+          "label": "A",
+          "prompt": "这么多人都能用，但他们怎么会用同一套东西？",
+          "answerHint": "同一结构，不同层级使用。政府看一级和二级指标做策略，社区管理者看三级指标做改进。",
+          "secondLevel": {
+            "label": "A1",
+            "prompt": "那居民真的能用吗？",
+            "answerHint": "完整版不一定适合居民直接使用，但简化版完全可以用于参与式反馈。"
+          }
+        },
+        "B": {
+          "label": "B",
+          "prompt": "在这些用户里，你最希望谁用？",
+          "answerHint": "最核心的是地方政府和社区管理者，因为他们最直接决定社区更新、服务配置和资源投向。",
+          "secondLevel": {
+            "label": "B1",
+            "prompt": "那研究者的作用是什么？",
+            "answerHint": "研究者负责继续检验、修正和扩展体系，保证它不是一次性工具。"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -16,3 +16,8 @@ Anki decks for PhD viva preparation and thesis revision.
   Thesis term deck with type labels (`word`, `phrase`, `collocation`).
 
 CSV versions are included for the same decks.
+
+## Web App
+
+- `webapp/`
+  Simplified viva practice web app with fixed MP3 prompts, manual start/stop recording, branch-based questioning, and user-saved answer notes.
