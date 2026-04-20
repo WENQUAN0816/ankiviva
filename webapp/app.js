@@ -90,6 +90,7 @@ const dom = {
   toggleAnswerBtn: document.getElementById("toggleAnswerBtn"),
   previousPromptBtn: document.getElementById("previousPromptBtn"),
   playPromptBtn: document.getElementById("playPromptBtn"),
+  restartAnswerBtn: document.getElementById("restartAnswerBtn"),
   recordToggleBtn: document.getElementById("recordToggleBtn"),
   nextPromptBtn: document.getElementById("nextPromptBtn"),
   statusLine: document.getElementById("statusLine"),
@@ -872,14 +873,17 @@ function updatePromptControls() {
   const hasPrompt = Boolean(getCurrentPrompt() && state.session);
   const sessionCompleted = Boolean(state.session?.isCompleted);
   const sessionPaused = Boolean(state.session?.isPaused);
-  const canPrevious = hasPrompt && !state.isRecording && !sessionPaused && hasPreviousPrompt();
-  const canRestart = hasPrompt && !state.isRecording && !sessionPaused;
+  const replayingQuestion = state.promptPhase === "question_replay";
+  const canPrevious = hasPrompt && !state.isRecording && !sessionPaused && hasPreviousPrompt() && !replayingQuestion;
+  const canReplay = hasPrompt && !state.isRecording && !sessionPaused && state.promptPhase === "finished";
+  const canRestart = hasPrompt && !state.isRecording && !sessionPaused && !replayingQuestion;
   const canStop = hasPrompt && state.isRecording;
   const canNext =
     hasPrompt && !state.isRecording && !sessionPaused && state.promptPhase === "finished" && !sessionCompleted;
 
   dom.previousPromptBtn.disabled = !canPrevious;
-  dom.playPromptBtn.disabled = !canRestart;
+  dom.playPromptBtn.disabled = !canReplay;
+  dom.restartAnswerBtn.disabled = !canRestart;
   dom.recordToggleBtn.disabled = !canStop;
   dom.nextPromptBtn.disabled = !canNext;
   dom.recordToggleBtn.textContent = "提前结束录音";
@@ -1454,6 +1458,37 @@ function restartCurrentPrompt() {
   renderPrompt(true);
 }
 
+async function replayCurrentQuestionAudio() {
+  const prompt = getCurrentPrompt();
+  if (!prompt || !state.session || state.isRecording || state.session.isPaused || state.promptPhase !== "finished") {
+    return;
+  }
+
+  stopPromptAudioPlayback();
+  const previousToken = state.activePromptToken;
+  const replayToken = uid("prompt-replay");
+  state.activePromptToken = replayToken;
+  state.promptPhase = "question_replay";
+  updatePromptControls();
+
+  try {
+    await playQuestionAudioCompat(replayToken, prompt);
+  } catch (error) {
+    if (state.activePromptToken !== replayToken) return;
+    state.activePromptToken = previousToken;
+    state.promptPhase = "finished";
+    updatePromptControls();
+    updateStatus(`Unable to replay the English question: ${error.message}`, "danger");
+    return;
+  }
+
+  if (state.activePromptToken !== replayToken) return;
+  state.activePromptToken = previousToken;
+  state.promptPhase = "finished";
+  updatePromptControls();
+  updateStatus("English question replay finished. You can continue or restart this answer.", "muted");
+}
+
 function goToPreviousPrompt() {
   if (!state.session || state.isRecording || state.session.isPaused || !hasPreviousPrompt()) return;
 
@@ -2003,7 +2038,8 @@ function attachEventListeners() {
       await restoreSession(state.profile.activeSession);
     }
   });
-  dom.playPromptBtn.addEventListener("click", restartCurrentPrompt);
+  dom.playPromptBtn.addEventListener("click", replayCurrentQuestionAudio);
+  dom.restartAnswerBtn.addEventListener("click", restartCurrentPrompt);
   dom.previousPromptBtn.addEventListener("click", goToPreviousPrompt);
   dom.recordToggleBtn.addEventListener("click", () => stopRecording("manual"));
   dom.nextPromptBtn.addEventListener("click", advancePrompt);
