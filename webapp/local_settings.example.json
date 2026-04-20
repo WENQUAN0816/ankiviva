@@ -1,0 +1,13 @@
+{
+  "azureSpeech": {
+    "region": "southeastasia",
+    "keys": [
+      "PRIMARY_KEY_HERE",
+      "SECONDARY_KEY_HERE"
+    ],
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-8%",
+    "pitch": "0%",
+    "outputFormat": "audio-24khz-96kbitrate-mono-mp3"
+  }
+}

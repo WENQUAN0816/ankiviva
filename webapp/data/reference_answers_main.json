@@ -1,0 +1,221 @@
+{
+  "answers": {
+    "Q01-main": {
+      "purposeZh": "老师想看你能不能马上抓住 thesis 的主轴。",
+      "conclusion": "My thesis develops and validates a post-pandemic evaluation system for age-friendly urban communities in Henan.",
+      "logic": "It starts from the gap of lacking one local and systematic tool, then builds a full method chain from indicator extraction to validation.",
+      "evidence": "The study moved from 410 texts to 847 candidates, then 55 indicators, and finally 48 validated indicators.",
+      "boundary": "This result validates the framework, but it does not claim to represent every community in Henan."
+    },
+    "Q02-main": {
+      "purposeZh": "老师想看你的选题是不是有研究价值，不只是个人兴趣。",
+      "conclusion": "I chose this topic because aging and post-pandemic risk made age-friendly community evaluation a real and urgent problem in Henan.",
+      "logic": "Existing frameworks are not local enough, not systematic enough, and not strong enough in health and emergency needs.",
+      "evidence": "My framework later showed that health services and emergency response together account for 39.77 percent of the total weight.",
+      "boundary": "So the topic is not only practical. It also fills a clear research gap."
+    },
+    "Q03-main": {
+      "purposeZh": "老师想看你能不能守住“空间”这个题目，不被说成跑题。",
+      "conclusion": "My study is still about community space, but I evaluate it from a space performance view rather than a pure form view.",
+      "logic": "For older adults, space works only when health support, emergency response, and community support also help the space function well.",
+      "evidence": "That is why the final framework includes health, emergency, transport, and support dimensions, not only physical design.",
+      "boundary": "I am not saying space is everything. I am saying these factors directly affect how space is used."
+    },
+    "Q04-main": {
+      "purposeZh": "老师想看你能不能把方法链讲清楚，并说明为什么不是普通 Delphi-AHP。",
+      "conclusion": "My method is a data-driven chain: SciBERT for extraction, clustering for structure, Fuzzy Delphi for validation, AHP for weighting, and case study for testing.",
+      "logic": "The key difference is that I did not begin with a researcher-made list. I began with text-based indicator extraction.",
+      "evidence": "The chain moved from 410 texts to 48 final indicators and then to three case-study scores.",
+      "boundary": "This reduces subjectivity at the front end, but it does not remove subjectivity completely."
+    },
+    "Q05-main": {
+      "purposeZh": "老师想看你的理论基础是不是清楚、是不是能解释结果。",
+      "conclusion": "The main theory is person-environment fit, supported by other frameworks such as WHO age-friendly community and resilience thinking.",
+      "logic": "This theory explains why the framework must include not only physical space, but also health support, safety, and social support.",
+      "evidence": "The weighted results later showed that health services, emergency response, and transport became the top three domains.",
+      "boundary": "So WHO is an important reference, but not the single core theory of the thesis."
+    },
+    "Q06-main": {
+      "purposeZh": "老师想看你的研究问题、目标和结果是不是一条线，而不是散的。",
+      "conclusion": "Yes, the research questions, objectives, methods, and results match each other clearly.",
+      "logic": "Objective one identifies factors, objective two ranks them, and objective three develops and validates the system.",
+      "evidence": "This is shown by the chain 410 texts to 55 indicators, then 48 final indicators, and then validation in three communities.",
+      "boundary": "The weakest part is external generalization, but the framework validation itself was achieved."
+    },
+    "Q07-main": {
+      "purposeZh": "老师想看你的语料来源是不是透明、可复现、站得住。",
+      "conclusion": "The 410 texts were selected through a systematic screening process based on relevance, quality, authority, and timeliness.",
+      "logic": "I did not rely on one source only, because a practical framework needs theory, policy, and real standards together.",
+      "evidence": "The corpus included 345 academic papers, 31 industry survey reports, and 34 standard documents.",
+      "boundary": "So the goal was not to collect every text, but to build a reliable and balanced evidence base."
+    },
+    "Q08-main": {
+      "purposeZh": "老师想看你为什么选 SciBERT，而不是为了显得高级。",
+      "conclusion": "I chose SciBERT because it is designed for scientific text and fits my literature-based indicator extraction task better than a general model.",
+      "logic": "My study used papers, reports, and standards, so I needed a model that handles academic language and domain terms well.",
+      "evidence": "In my study, SciBERT reached 84.8 percent accuracy and a weighted F1 score of 0.848.",
+      "boundary": "SciBERT was not the final judge. Its results were still checked by experts and later validation."
+    },
+    "Q09-main": {
+      "purposeZh": "老师想看你 847 到 55 的过程是不是透明，不是随意砍指标。",
+      "conclusion": "The reduction from 847 to 55 was a structured filtering process, not an arbitrary cut.",
+      "logic": "I removed noise, overlap, weak relevance, and low operability step by step so that only strong and usable indicators remained.",
+      "evidence": "After that filtering, 55 indicators went into expert validation, and 48 were finally retained.",
+      "boundary": "Some judgment is still needed in filtering, so I controlled it with clear rules and later expert review."
+    },
+    "Q10-main": {
+      "purposeZh": "老师想看你的聚类选择是不是和后面框架结构匹配。",
+      "conclusion": "I chose hierarchical clustering because I needed a layered framework, not just flat groups.",
+      "logic": "The study had to move from a list of indicators to a meaningful multi-level structure for later weighting.",
+      "evidence": "The final framework was organized into 8 primary domains, 14 secondary elements, and 48 tertiary indicators.",
+      "boundary": "So the choice was driven by structure and interpretability, not by popularity alone."
+    },
+    "Q11-main": {
+      "purposeZh": "老师想看专家数据是不是可靠，不是只靠“专家说了算”。",
+      "conclusion": "I validated the expert data through a two-round Fuzzy Delphi process and several reliability checks.",
+      "logic": "The goal was to test consensus, stability, and internal reliability, not just collect one round of opinions.",
+      "evidence": "The study used 15 experts, two rounds, d-value improvement from 0.087 to 0.076, Cronbach's alpha above 0.88, and ICC above 0.85.",
+      "boundary": "So the expert stage is still expert-based, but it is structured and testable rather than informal."
+    },
+    "Q12-main": {
+      "purposeZh": "老师想看你怎么把软指标做得尽量客观和可比。",
+      "conclusion": "Service and satisfaction indicators were measured through multi-source evidence and then standardized into one scoring system.",
+      "logic": "I did not treat them as pure impressions. I linked them to records, feedback, coverage, field checks, and comparable scoring rules.",
+      "evidence": "The case stage combined field observation, service records, administrative data, and available feedback before weighting the final scores.",
+      "boundary": "Some subjectivity remains in these indicators, but it was controlled through triangulation and standardization."
+    },
+    "Q13-main": {
+      "purposeZh": "老师想看案例评估是不是规范，尤其会追你‘到底几个人评’这种细节。",
+      "conclusion": "The case evaluation followed a standard protocol, and I must report the exact evaluator number from my original records in a consistent way.",
+      "logic": "The key point is that reliability comes from a stable protocol, multi-source evidence, and clear scoring rules, not from vague wording.",
+      "evidence": "All three communities were assessed under the same 48-indicator framework and the same weighted scoring logic.",
+      "boundary": "If the number is described differently in different places, I need to unify that before the viva."
+    },
+    "Q14-main": {
+      "purposeZh": "老师想看三个社区的数据来源是不是扎实，而不是随手拿来的。",
+      "conclusion": "The three community datasets came from triangulated sources rather than from one single channel.",
+      "logic": "I used field observation, measurement, community records, service data, and supporting location-based information to build the case data.",
+      "evidence": "All data were entered into the same 48-indicator framework and produced three differentiated total scores.",
+      "boundary": "The data richness was not fully identical across communities, so standardization and quality control were necessary."
+    },
+    "Q15-main": {
+      "purposeZh": "老师想看你能不能承认 3 个案例的限制，同时守住验证价值。",
+      "conclusion": "Three communities are not enough for statistical generalization, but they are enough for framework validation.",
+      "logic": "The aim was to test whether the system can distinguish different community types and show practical discrimination in real cases.",
+      "evidence": "The three scores were 85.27, 71.24, and 54.50, which show clear separation across the cases.",
+      "boundary": "So I claim validation and discriminatory power, not province-wide representativeness."
+    },
+    "Q16-main": {
+      "purposeZh": "老师想看你能不能把‘做完 3 个社区以后到底证明了什么’说清楚。",
+      "conclusion": "The three-community validation shows that the framework has practical use and clear discriminatory power.",
+      "logic": "If the system can separate different types of communities and explain their strengths and weaknesses, then it is working as an evaluation tool.",
+      "evidence": "The final scores were 85.27 for Provence, 71.24 for Fenghuangcheng, and 54.50 for Wei'erlu, with a range of 30.77.",
+      "boundary": "This proves usability and structure, but it does not yet prove universal generalization."
+    },
+    "Q17-main": {
+      "purposeZh": "老师想看你知不知道自己论文最核心的结果证据在哪。",
+      "conclusion": "The core result is the weighted structure of the framework together with the three-community validation result.",
+      "logic": "The weights show what matters most in theory, and the case scores show that the framework works in practice.",
+      "evidence": "Health services, emergency response, and transport ranked as the top three domains, and the case scores clearly separated the three communities.",
+      "boundary": "If I have to choose only one result table, I would choose the three-community score comparison because it proves the tool can work."
+    },
+    "Q18-main": {
+      "purposeZh": "老师想看你能不能把核心发现说成一句真发现，而不是泛泛而谈。",
+      "conclusion": "My core finding is that post-pandemic age-friendly communities must be judged not only by accessibility, but also by health support, emergency response, and mobility.",
+      "logic": "The post-pandemic context changed the priority structure, so the center of the framework moved beyond pure physical design.",
+      "evidence": "Health services ranked first at 23.01 percent, emergency response second at 16.76 percent, and transport third at 16.37 percent.",
+      "boundary": "This is a strong finding for my framework and context, but it should still be adapted carefully in other regions."
+    },
+    "Q19-main": {
+      "purposeZh": "老师想看你有没有真正读懂自己的结果里不寻常的地方。",
+      "conclusion": "One notable point is that old communities are not weak in every domain, and another is that health and emergency issues moved to the center of the framework.",
+      "logic": "This means community support can partly compensate for weak infrastructure, while post-pandemic risk reshapes what counts most.",
+      "evidence": "Wei'erlu performed weaker overall, but it still showed relative strength in support and social dimensions compared with some hard infrastructure indicators.",
+      "boundary": "These are important patterns, but I must also keep my numbers and wording fully consistent in the viva."
+    },
+    "Q20-main": {
+      "purposeZh": "老师想看你能不能主动承认 limitation，同时不把论文说垮。",
+      "conclusion": "The main limitation is that the framework was validated with only three communities in Henan and still depends partly on expert judgment.",
+      "logic": "This affects external generalization more than internal framework validity.",
+      "evidence": "The study is Henan-focused, cross-sectional, and built through expert validation and AHP weighting rather than large-scale longitudinal data.",
+      "boundary": "So the thesis stands as a validated framework, but not as a final universal model."
+    },
+    "Q21-main": {
+      "purposeZh": "老师想看你对‘普适性’是不是讲得足够准确，不会说过头。",
+      "conclusion": "The framework has structural generalizability, but not direct parameter generalizability.",
+      "logic": "The method chain and logic can travel to other contexts, but the exact indicators and weights should be recalibrated locally.",
+      "evidence": "The system is built as a full chain of extraction, validation, weighting, and testing, which can be reused in other regions.",
+      "boundary": "So I do not claim that the Henan weights can be copied directly to other provinces or countries."
+    },
+    "Q22-main": {
+      "purposeZh": "老师想看你能不能把理论贡献和实践贡献分开说清楚。",
+      "conclusion": "The thesis contributes both theoretically and practically.",
+      "logic": "In theory, it shifts age-friendly evaluation toward health and resilience. In practice, it gives a structured tool for diagnosis and decision-making.",
+      "evidence": "The top weights placed health services, emergency response, and transport at the center, and the case study proved the framework can distinguish real communities.",
+      "boundary": "So it is not only a practical checklist, but it is also not theory without application."
+    },
+    "Q23-main": {
+      "purposeZh": "老师想看你未来研究是不是顺着论文逻辑走，而不是空泛展望。",
+      "conclusion": "The next step is to expand the cases and test the framework in more regions and community types.",
+      "logic": "Before building a larger platform, I should first strengthen external validity and see how stable the framework is across contexts.",
+      "evidence": "At this stage, the framework has been tested in three communities, so the clear next step is broader validation.",
+      "boundary": "Digital platforms and AI tools are useful, but they should come after stronger validation."
+    },
+    "Q24-main": {
+      "purposeZh": "老师想看你论文的实际用途是不是具体，而不是口号。",
+      "conclusion": "The most realistic application is to support priority setting in community renewal and age-friendly improvement.",
+      "logic": "A weighted framework helps decision-makers compare communities, find weak points, and allocate limited resources more clearly.",
+      "evidence": "The three-community validation already showed that the system can separate performance levels and point to different strengths and weaknesses.",
+      "boundary": "So the framework is ready as a prototype tool, but wider application still needs local calibration and more cases."
+    },
+    "Q25-main": {
+      "purposeZh": "老师想看你知不知道谁是真正的使用者，谁是次级使用者。",
+      "conclusion": "The main users are local government and community managers, while planners, service providers, and researchers are also important users.",
+      "logic": "They can all use the same framework, but at different levels and for different decisions.",
+      "evidence": "For example, top-level domains support policy choices, while detailed indicators support diagnosis and local improvement.",
+      "boundary": "Residents may use only a simplified version, not the full technical framework."
+    },
+    "Q26-main": {
+      "purposeZh": "老师想看你为什么要用 FDM，以及专家选择是不是有理有据。",
+      "conclusion": "I used Fuzzy Delphi because SciBERT can generate candidates, but experts are still needed to refine, localize, and validate the final indicator set.",
+      "logic": "The method lets me turn a large candidate pool into a more stable and agreed framework through repeated expert consensus.",
+      "evidence": "The process used 15 interdisciplinary experts, two rounds, reduced 55 indicators to 48, and kept 100 percent expert retention.",
+      "boundary": "So FDM is not replacing evidence. It is refining evidence into a workable framework."
+    },
+    "Q27-main": {
+      "purposeZh": "老师想看你能不能解释‘为什么 Delphi 没有老人’而不显得回避。",
+      "conclusion": "I did not use elderly residents as Delphi experts because the Delphi stage needed stable professional judgment for framework calibration.",
+      "logic": "Resident experience and expert calibration are not the same task, so I separated them rather than mixing them in one stage.",
+      "evidence": "Elderly needs still entered the study through literature, policy texts, service and satisfaction indicators, and the case validation stage.",
+      "boundary": "So I do not claim elderly people were absent from the study. I only say they were not used as Delphi experts."
+    },
+    "Q28-main": {
+      "purposeZh": "老师想看你的 AHP 实施过程是不是严谨、是不是过了一致性检验。",
+      "conclusion": "I implemented AHP on the final validated hierarchy and controlled credibility through consistency checks.",
+      "logic": "Experts compared indicators in pairs, their matrices were checked, and only consistent judgments were used to form the group weights.",
+      "evidence": "All expert consistency ratios were below 0.1, and the average CR was 0.0567.",
+      "boundary": "AHP still involves expert judgment, but here the judgment is transparent, testable, and logically checked."
+    },
+    "Q29-main": {
+      "purposeZh": "老师想看你为什么最后没有用机器学习赋权，以及你是否诚实面对这个限制。",
+      "conclusion": "I used AHP because, under my current sample size and data conditions, it was more defensible and more stable than machine-learning-based weighting.",
+      "logic": "Machine learning needs many more high-quality community cases, while my thesis had a small number of validated case communities.",
+      "evidence": "At this stage I had only three case-study communities, which is far from the scale needed for stable model training.",
+      "boundary": "So this is also one of my main limitations, and a larger future dataset may support a different method later."
+    },
+    "Q30-main": {
+      "purposeZh": "老师想看你案例测量是不是尽量客观、可重复、可解释。",
+      "conclusion": "I measured the three communities through one standard protocol and as much objective evidence as possible.",
+      "logic": "I combined field observation, direct measurement, office data, records, and map-based information, then standardized the results into one scoring framework.",
+      "evidence": "These data were entered into the 48-indicator weighted system and produced the final scores of 85.27, 71.24, and 54.50.",
+      "boundary": "A small amount of judgment is still involved, but the protocol was designed to keep it controlled and repeatable."
+    },
+    "Q31-main": {
+      "purposeZh": "老师想看你前端筛选和数据清洗是不是透明，能不能说清它在方法链里的位置。",
+      "conclusion": "PRISMA and data cleaning are the quality-control bridge of the whole method chain.",
+      "logic": "PRISMA controls the text input side, and data cleaning controls the candidate indicator side before expert validation starts.",
+      "evidence": "They helped narrow the process from a broad search to 410 qualified texts, then from 847 candidates to 55 high-quality indicators.",
+      "boundary": "So these steps are not minor technical work. They are a key reason why the later validation became more stable."
+    }
+  }
+}

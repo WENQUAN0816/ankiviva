@@ -1,2 +1,4 @@
 webapp/__pycache__/
 webapp/uploads/
+webapp/audio/azure_cache/
+webapp/local_settings.json

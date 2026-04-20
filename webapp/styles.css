@@ -59,6 +59,11 @@ button, input, select, textarea { font: inherit; }
 
 .tab-row { margin: 18px 0; }
 
+.setting-hint {
+  margin: 10px 0 0;
+  line-height: 1.6;
+}
+
 .tab-btn, .ghost-btn, .secondary-btn, .danger-btn, .primary-btn, .branch-btn {
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -151,6 +156,18 @@ textarea {
   line-height: 1.8;
 }
 
+#timerLabel {
+  display: inline-block;
+  min-width: 56px;
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+#timerLabel.timer-danger {
+  color: var(--danger);
+  font-weight: 800;
+  transform: scale(1.06);
+}
+
 .eyebrow {
   margin: 0 0 8px;
   text-transform: uppercase;
@@ -204,6 +221,160 @@ h1, h2 { margin: 0; }
   background: rgba(180, 79, 47, 0.06);
 }
 
+.prompt-card {
+  margin: 16px 0 14px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(180, 79, 47, 0.18);
+  background:
+    linear-gradient(135deg, rgba(180, 79, 47, 0.08), rgba(43, 90, 120, 0.04)),
+    rgba(255, 255, 255, 0.92);
+}
+
+.prompt-text {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.prompt-translation {
+  margin: 12px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--secondary);
+}
+
+.question-tree {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.answer-toolbar {
+  margin-bottom: 12px;
+}
+
+.tree-node {
+  display: grid;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(215, 205, 188, 0.9);
+  background: rgba(255, 255, 255, 0.78);
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.tree-node.current-only {
+  margin-left: 0;
+  background:
+    linear-gradient(135deg, rgba(180, 79, 47, 0.06), rgba(43, 90, 120, 0.03)),
+    rgba(255, 255, 255, 0.88);
+}
+
+.tree-node.level-1 {
+  margin-left: 18px;
+}
+
+.tree-node.level-2 {
+  margin-left: 36px;
+}
+
+.tree-node.active {
+  border-color: rgba(180, 79, 47, 0.55);
+  box-shadow: 0 10px 24px rgba(180, 79, 47, 0.12);
+  transform: translateY(-1px);
+}
+
+.tree-node.selected-branch {
+  border-color: rgba(43, 90, 120, 0.38);
+}
+
+.tree-node.unselected-branch {
+  opacity: 0.68;
+}
+
+.tree-node-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tree-node-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(43, 90, 120, 0.1);
+  color: var(--secondary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.tree-node.active .tree-node-tag {
+  background: rgba(180, 79, 47, 0.14);
+  color: var(--accent-dark);
+}
+
+.tree-node-text {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.tree-note {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.answer-panel {
+  margin-bottom: 16px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(43, 90, 120, 0.18);
+  background:
+    linear-gradient(135deg, rgba(43, 90, 120, 0.06), rgba(180, 79, 47, 0.03)),
+    rgba(255, 255, 255, 0.92);
+}
+
+.answer-panel h3,
+.answer-panel h4 {
+  margin: 0;
+}
+
+.answer-purpose-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(43, 90, 120, 0.12);
+  color: var(--secondary);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.answer-item {
+  padding: 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(215, 205, 188, 0.9);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.answer-item p {
+  margin: 8px 0 0;
+  line-height: 1.6;
+}
+
 .attempt-list {
   display: grid;
   gap: 12px;
@@ -225,6 +396,11 @@ h1, h2 { margin: 0; }
   color: var(--muted);
 }
 
+.attempt-status-uploaded {
+  color: var(--danger);
+  font-weight: 800;
+}
+
 .attempt-item audio {
   width: 100%;
   margin-top: 8px;
@@ -234,4 +410,5 @@ h1, h2 { margin: 0; }
   .app-shell { grid-template-columns: 1fr; }
   .sidebar { border-right: none; border-bottom: 1px solid rgba(146, 129, 105, 0.22); }
   .header-panel { flex-direction: column; }
+  .answer-grid { grid-template-columns: 1fr; }
 }

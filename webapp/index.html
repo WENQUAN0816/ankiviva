@@ -10,7 +10,7 @@
   <div id="authOverlay" class="overlay">
     <div class="auth-card">
       <h1>AnkiViva Web</h1>
-      <p class="muted">简化版博士答辩训练网页。固定 MP3 问题、手动录音、分支追问、备答保存。</p>
+      <p class="muted">博士答辩训练网页。默认先听英文评委提问，开始录音后再显示英文字幕、中文对照和结构化参考答案。</p>
       <div class="tab-row">
         <button id="showLoginBtn" class="tab-btn active" type="button">登录</button>
         <button id="showRegisterBtn" class="tab-btn" type="button">注册</button>
@@ -46,24 +46,45 @@
 
       <section class="panel">
         <h2>训练设置</h2>
+        <label>训练模式
+          <select id="trainingMode">
+            <option value="focus">重点复习：主问题 + 必问题</option>
+            <option value="topic">主题模式：主问题 + 全分支</option>
+            <option value="mock" selected>模拟答辩：主问题 + 单分支</option>
+          </select>
+        </label>
         <label>提问顺序
           <select id="orderMode">
             <option value="chapter">按章节顺序</option>
             <option value="random">按问题组乱序</option>
           </select>
         </label>
-        <label>分支模式
+        <label id="branchModeRow">模拟追问模式
           <select id="branchMode">
             <option value="random">随机 A/B 分支</option>
             <option value="manual">主问题后手动选择 A/B</option>
-            <option value="all">完整全分支模式</option>
           </select>
         </label>
+        <label>提问语速
+          <select id="playbackRate">
+            <option value="0.8">0.8x</option>
+            <option value="0.9">0.9x</option>
+            <option value="1" selected>1.0x</option>
+            <option value="1.1">1.1x</option>
+            <option value="1.25">1.25x</option>
+            <option value="1.5">1.5x</option>
+          </select>
+        </label>
+        <p id="trainingModeHint" class="muted setting-hint">主问题全部保留，并额外加入我判断最容易被追问的高概率问题。</p>
         <div class="button-row">
           <button id="prepareMicBtn" class="secondary-btn" type="button">初始化麦克风</button>
           <button id="startSessionBtn" class="primary-btn" type="button">开始新练习</button>
         </div>
         <button id="resumeSessionBtn" class="ghost-btn full-width" type="button">继续上次练习</button>
+        <div class="button-row">
+          <button id="pauseSessionBtn" class="secondary-btn full-width" type="button" disabled>暂停练习</button>
+          <button id="endSessionBtn" class="danger-btn full-width" type="button" disabled>结束练习</button>
+        </div>
         <p id="micStatus" class="muted">尚未初始化麦克风。</p>
       </section>
 
@@ -76,8 +97,9 @@
         <h2>统计</h2>
         <ul class="stats-list">
           <li>问题组总数：<strong id="groupCountLabel">0</strong></li>
-          <li>完整题目总数：<strong id="fullPromptCountLabel">0</strong></li>
-          <li>单分支总数：<strong id="singlePromptCountLabel">0</strong></li>
+          <li>重点复习总数：<strong id="focusPromptCountLabel">0</strong></li>
+          <li>主题全覆盖总数：<strong id="fullPromptCountLabel">0</strong></li>
+          <li>模拟答辩总数：<strong id="singlePromptCountLabel">0</strong></li>
         </ul>
         <button id="exportSessionBtn" class="ghost-btn full-width" type="button">导出本次练习</button>
       </section>
@@ -92,7 +114,7 @@
         <div class="progress-box">
           <div>问题组进度：<strong id="groupProgressLabel">0 / 0</strong></div>
           <div>当前题目：<strong id="promptProgressLabel">0 / 0</strong></div>
-          <div>已用时：<strong id="timerLabel">00:00</strong></div>
+          <div>倒计时：<strong id="timerLabel">00:00</strong></div>
         </div>
       </header>
 
@@ -105,16 +127,57 @@
           <span id="promptTypeBadge" class="badge">待开始</span>
         </div>
 
+        <p class="muted">本题模式：先播放英文评委提问。播放结束后给你 3 秒准备时间，再自动录音 45 秒。录音一开始，才显示英文字幕和中文对照。</p>
+
+        <div class="prompt-card">
+          <p id="promptListenHint" class="muted">Listen to the examiner's question first.</p>
+          <p id="promptTextLabel" class="prompt-text hidden">English subtitle will appear here.</p>
+          <p id="promptTextZhLabel" class="prompt-translation hidden">中文对照会显示在这里。</p>
+        </div>
+
+        <div id="questionTree" class="question-tree"></div>
+
+        <div class="button-row compact answer-toolbar">
+          <button id="toggleAnswerBtn" class="ghost-btn" type="button" disabled>查看结构化答案</button>
+        </div>
+
+        <section id="referenceAnswerPanel" class="answer-panel hidden">
+          <div class="title-row">
+            <h3>40s Answer Frame</h3>
+            <span id="answerPurposeBadge" class="answer-purpose-badge">Purpose</span>
+          </div>
+          <p id="answerPurposeText" class="muted">老师提问目的会显示在这里。</p>
+          <div class="answer-grid">
+            <article class="answer-item">
+              <h4>Conclusion</h4>
+              <p id="answerConclusionText">-</p>
+            </article>
+            <article class="answer-item">
+              <h4>Logic</h4>
+              <p id="answerLogicText">-</p>
+            </article>
+            <article class="answer-item">
+              <h4>Evidence</h4>
+              <p id="answerEvidenceText">-</p>
+            </article>
+            <article class="answer-item">
+              <h4>Boundary</h4>
+              <p id="answerBoundaryText">-</p>
+            </article>
+          </div>
+        </section>
+
         <div class="button-row wrap">
-          <button id="playPromptBtn" class="primary-btn" type="button">播放问题 MP3</button>
-          <button id="recordToggleBtn" class="secondary-btn" type="button" disabled>开始录音</button>
+          <button id="previousPromptBtn" class="ghost-btn" type="button" disabled>上一题</button>
+          <button id="playPromptBtn" class="primary-btn" type="button" disabled>重播英文问题</button>
+          <button id="recordToggleBtn" class="secondary-btn" type="button" disabled>提前结束录音</button>
           <button id="nextPromptBtn" class="ghost-btn" type="button" disabled>下一题</button>
         </div>
 
         <p id="statusLine" class="message muted">等待开始。</p>
 
         <div id="branchChooser" class="branch-chooser hidden">
-          <p>请选择下一条追问路径：</p>
+          <p>请选择下一条追问路径，然后系统会自动开始下一题：</p>
           <div class="button-row">
             <button class="branch-btn" data-branch="A" type="button">走 A 分支</button>
             <button class="branch-btn" data-branch="B" type="button">走 B 分支</button>
@@ -145,6 +208,7 @@
     </main>
   </div>
 
+  <script src="./vendor/jszip.min.js"></script>
   <script src="./app.js" type="module"></script>
 </body>
 </html>
